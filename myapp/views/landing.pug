@@ -3,16 +3,6 @@ html(lang='en')
   include common/head.pug
   +head("Starter MVP")
   body
-    nav.navbar.navbar-expand.navbar-light.bg-light
-      a(href="/", aria-level="Golden Goose").navbar-brand.mr-0
-      .mr-md-2
-        img(src="/images/golden-goose.svg", width="36", height="36")
-      .collapse.navbar-collapse 
-        ul.navbar-nav.mr-auto 
-          li.nav-item
-            a.nav-link(href="/") Home
-          li.nav-item 
-            a.nav-link(href="/") Leads  
     h1= title
     p Welcome to #{title}
     form(action="/", method="POST")
