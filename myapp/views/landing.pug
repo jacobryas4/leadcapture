@@ -17,10 +17,10 @@ html(lang='en')
                 .input-group-append
                   button(type="submit").btn.btn-primary Get Started
 
-    .row  
-      .col-md-6
-        if leads
-          h1 Leads
+      .row  
+        .col-md-6
+          if leads
+            h1 Leads
             table.table
               thead
                 tr
@@ -36,9 +36,8 @@ html(lang='en')
                     td
                       a(href="/lead/" + lead.id) Details
                     td
-                      button(onclick=`deleteLead('${lead.id}')`)
-                      .btn.btn-primary Delete
-    script(src="https://code.jquery.com/jquery-3.4.1.min.js")
+                      button(onclick=`deleteLead('${lead.id}')`).btn.btn-primary Delete
+    
     include common/footer.pug
     +footer()
     script(src="/javascripts/leads.js")
